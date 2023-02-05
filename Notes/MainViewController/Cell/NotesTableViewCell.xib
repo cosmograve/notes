@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NotesTableViewCell" customModule="Notes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="9Ga-Pk-PhC">
+                        <rect key="frame" x="12" y="6.6666666666666679" width="264" height="46.666666666666657"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Han-y2-BOg">
+                                <rect key="frame" x="0.0" y="0.0" width="264" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h68-pf-03e">
+                                <rect key="frame" x="0.0" y="26.333333333333336" width="264" height="20.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.compact.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="En1-0F-NZk">
+                        <rect key="frame" x="288" y="21.666666666666664" width="20" height="16.666666666666664"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="G4f-fe-D0P"/>
+                            <constraint firstAttribute="width" constant="20" id="TDa-93-7wA"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="En1-0F-NZk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="34J-lQ-kQC"/>
+                    <constraint firstItem="9Ga-Pk-PhC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="RiZ-vj-CoO"/>
+                    <constraint firstItem="En1-0F-NZk" firstAttribute="leading" secondItem="9Ga-Pk-PhC" secondAttribute="trailing" constant="12" id="Zzq-c7-UrR"/>
+                    <constraint firstAttribute="trailing" secondItem="En1-0F-NZk" secondAttribute="trailing" constant="12" id="nUM-BJ-8lz"/>
+                    <constraint firstItem="9Ga-Pk-PhC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="t7I-v7-ZX7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="noteDateLabel" destination="h68-pf-03e" id="e8u-VV-qyb"/>
+                <outlet property="noteTextLabel" destination="Han-y2-BOg" id="Cqe-5F-Gl0"/>
+            </connections>
+            <point key="canvasLocation" x="-166.41221374045801" y="-37.323943661971832"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.compact.right" catalog="system" width="62" height="128"/>
+    </resources>
+</document>
